@@ -1,27 +1,42 @@
 # PortalOfertas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+Projeto Criado utilizando [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
-## Development server
+# Tecnologias de Front-end
+Bootstrap 5v
+PrimeNG
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Informações de build
+Verifique se você possui os seguintes softwares instalados:
 
-## Code scaffolding
+NodeJS --> Versão 15 +
+Npm --> Versão 8.1.2
+Angular CLI --> Versão 13 +
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Subindo o Projeto
+Ao clonar o repositorio em sua maquina siga os seguintes passos:
 
-## Build
+Passo 1:
+npm install
+(Este comando irá automáticamente baixar todas as dependencias utlizadas no projeto)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Passo 2:
+npm start
+(Este comando irá executar a aplicação fazendo com que ela inicie no endereço http://localhost:4200)
 
-## Running unit tests
+##Json Server
+Para Back-end no consumo de api foi utilizado o Json server um arquivo que simula uma API para o consumo do front-end;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Este arquivo se encontra dentro da pasta esta nomeado como "db.json"
 
-## Running end-to-end tests
+Abra este arquivo utilizando um terminal e rode o seguinte comando:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Passo 1:
+npm install -g json-server
+(Este comando irá instalar o json server)
 
-## Further help
+passo 2: 
+json-server --watch db.json --port 3004
+(Este comando irá subir a API no endereço http://localhost:3004/ofertas)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
