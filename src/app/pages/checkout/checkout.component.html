@@ -1,0 +1,46 @@
+<app-menu></app-menu>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 formulario" >
+      <div class="text-form mb-3">
+        <h3>Pagamento</h3>
+      </div>
+      <div class="col-sm-12 container">
+        <form>
+          <div class=" mb-3">
+            <input type="number" name="numeroCartao" class="form-control" id="numeroCartao" required placeholder="Digite o número do cartão" aria-describedby="Cartão">
+          </div>
+          <div class="mb-3">
+            <input type="text" name="nomeUsuario"  class="form-control" id="nomeUsuario" required aria-describedby="Nome impresso"  placeholder="Digite o nome impresso">
+          </div>
+          <div class="mb-3">
+            <input class="form-control"name="dataVencimento"   min="2022-05" required value="2030-05" >
+          </div>
+
+          <button type="submit" class="btn btn-success"><i class="fa-solid fa-money-bill-1-wave" ></i> Pagar agora!</button>
+        </form>
+      </div>
+
+
+    </div>
+
+
+    <div class="col-sm-6 container resume">
+      <div class="text-resume mb-3 text-center">
+        <h3>Resumo da compra</h3>
+      </div>
+      <div class="list_resume text-center">
+        <ul>
+          <li><h4>Item: {{oferta.titulo}}</h4></li>
+          <p>Valor {{oferta.valor | currency : 'BRL'}}</p>
+        </ul>
+      </div>
+      <div class="list_total text-center">
+        <p>Total {{oferta.valor | currency : 'BRL'}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,72 @@
+.image_banner{
+  text-align: center;
+
+  margin-top: 80px;
+}
+
+.image{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.text-title{
+  margin-top: 150px;
+  text-align: center;
+
+}
+
+.text-detalhes{
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.list_details{
+  margin-left: 40px;
+}
+
+.list_destaques{
+  margin-left: 40px;
+}
+
+ul li{
+  list-style: none;
+
+}
+
+.list_details li{
+  width: 50%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.list_details li:nth-child(odd){
+  float: left;
+  }
+
+.list_details li:nth-child(even){
+  float: right;
+  }
+
+  .list_details i{
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .list_destaques li{
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .list_destaques li:nth-child(odd){
+    float: left;
+    }
+
+  .list_destaques li:nth-child(even){
+    float: right;
+    }
+
+    .list_destaques i{
+      display: inline-block;
+      margin-right: 5px;
+    }

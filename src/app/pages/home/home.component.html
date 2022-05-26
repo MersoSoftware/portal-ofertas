@@ -1,0 +1,59 @@
+<app-menu></app-menu>
+<div class="container">
+  <div class="row category">
+    <h3>Hoteis</h3>
+    <div class="row categoryTitle" >
+      <div class="col-lg-3" *ngFor="let item of hotel">
+        <div class="card" style="margin-bottom:15px;">
+          <img src="{{item.image}}" class="card-img-top" alt="hotel">
+          <div class="card-body" style="text-align:center ;">
+            <h5 class="card-title">{{item.categoria.nome}}</h5>
+            <p class="card-text">{{item.descricaoBreve}}</p>
+            <p class="card-text">{{item.valor |  currency : 'BRL'}}</p>
+            <a class="btn btn-primary" routerLink="detalhe/{{item.id}}">Comprar</a>
+          </div>
+        </div>
+     </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3>Restaurantes</h3>
+    <div class="row categoryTitle" >
+      <div class="col-lg-3" *ngFor="let item of restaurantes">
+        <div class="card" style="margin-bottom:15px;">
+          <img src="{{item.image}}" class="card-img-top" alt="hotel">
+          <div class="card-body" style="text-align:center ;">
+            <h5 class="card-title">{{item.categoria.nome}}</h5>
+            <p class="card-text">{{item.descricaoBreve}}</p>
+            <p class="card-text">{{item.valor |  currency : 'BRL'}}</p>
+            <a class="btn btn-primary" routerLink="detalhe/{{item.id}}">Comprar</a>
+          </div>
+        </div>
+     </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <h3>Entreterimento</h3>
+    <div class="row categoryTitle" >
+      <div class="col-lg-3" *ngFor="let item of entretenimento">
+        <div class="card" style="margin-bottom:15px;">
+          <img src="{{item.image}}" class="card-img-top" alt="hotel">
+          <div class="card-body" style="text-align:center ;">
+            <h5 class="card-title">{{item.categoria.nome}}</h5>
+            <p class="card-text">{{item.descricaoBreve}}</p>
+            <p class="card-text">{{item.valor |  currency : 'BRL'}}</p>
+            <a class="btn btn-primary" routerLink="detalhe/{{item.id}}">Comprar</a>
+          </div>
+        </div>
+     </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
